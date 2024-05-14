@@ -47,10 +47,6 @@
             var parsedUrl = new URL(uri);
             var hostname = parsedUrl.hostname;
 
-            if (!hostname.toLowerCase().endsWith(".com")) {
-                window.location.href = 'https://news.baidu.com/';
-                return;
-            }
             uri = appendParam(uri, '_f', 'gitee.io');
             window.location.href = uri;
         }
